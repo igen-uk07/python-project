@@ -44,7 +44,7 @@ def manage_playlists(playlists):
 
 # Function to search for a song
 def search_song(song_library):
-    search_term = input("\nEnter the title or artist of the song to search: ")
+    search_term = input("\nEnter the name or artist of the song to search: ")
     found = False
     for song in song_library:
         if search_term.lower() in song['name'].lower() or search_term.lower() in song['artist'].lower():
